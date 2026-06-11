@@ -1,20 +1,33 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Lawson & Partners Website
 
-# Run and deploy your AI Studio app
+This is a modern, static website built for Lawson & Partners. 
 
-This contains everything you need to run your app locally.
+## GitHub Pages Deployment
 
-View your app in AI Studio: https://ai.studio/apps/febe6153-4020-49c9-8cf2-dbb655aaceb2
+If you are hosting this on GitHub Pages, **ensure that the files (like `index.html`) are at the very root of your GitHub repository, not inside a subfolder like `applet/`.**
 
-## Run Locally
+If you uploaded a folder (e.g. `applet`) instead of its contents, GitHub Pages will not find `index.html` at the root. 
+**Fix:** Move all files out of the `applet` folder to the main root of your repository.
 
-**Prerequisites:**  Node.js
+### Automatic Deployment
 
+We have included a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys this site to GitHub Pages.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+To use it:
+1. Go to your repository on GitHub.
+2. Navigate to **Settings** > **Pages**.
+3. Under **Build and deployment**, set the **Source** to **GitHub Actions**.
+4. The site will automatically build and deploy every time you push to the `main` branch.
+
+### Local Development
+
+To run the site locally:
+```bash
+npm install
+npm run dev
+```
+
+To build for production:
+```bash
+npm run build
+```
