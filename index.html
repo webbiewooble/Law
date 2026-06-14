@@ -26,24 +26,27 @@
                     },
                     colors: {
                         brand: {
-                            50: '#faf6f9',
-                            100: '#f3eaf1',
-                            200: '#ebd4e3',
-                            300: '#dcb2ce',
-                            400: '#c786b2',
-                            500: '#b05f93',
-                            600: '#944275',
-                            700: '#7a325d',
-                            800: '#5f254f',
-                            900: '#4f1e41',
-                            950: '#2e0f25',
+                            50: '#F8F5F0',
+                            100: '#e6eef5',
+                            200: '#c1d4e6',
+                            300: '#90b3d1',
+                            400: '#5a8fba',
+                            500: '#3d719e',
+                            600: '#2c5780',
+                            700: '#234566',
+                            800: '#1b354f',
+                            900: '#0F1C2E',
+                            950: '#1A1A1A',
                         },
                         accent: {
-                            500: '#cda434',
-                        }
+                            400: '#d1b16a',
+                            500: '#C9A14A',
+                            600: '#b58e39',
+                        },
+                        textMain: '#2B2B2B'
                     },
                     backgroundImage: {
-                        'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0V0zm1 1h38v38H1V1z' fill='%23ebd4e3' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E\")",
+                        'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0V0zm1 1h38v38H1V1z' fill='%23C9A14A' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E\")",
                     }
                 }
             }
@@ -79,48 +82,48 @@
 <body class="bg-[#fcfbfc] text-brand-900 antialiased font-sans flex flex-col min-h-screen selection:bg-brand-200 selection:text-brand-900">
 
     <!-- ================= NAVIGATION ================= -->
-    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-200/60 transition-all duration-300">
+    <nav class="fixed top-0 w-full z-50 bg-brand-900 border-b border-brand-800 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative">
             <!-- Logo Button (Changed from <a> to <button> to prevent # jumping) -->
             <a href="index.html" class="flex flex-col md:flex-row items-center justify-center md:items-center md:justify-start gap-1 md:gap-3 group absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 md:static md:translate-x-0 md:translate-y-0 w-max">
-                <div class="w-8 h-8 md:w-10 md:h-10 bg-brand-900 text-white flex items-center justify-center rounded-sm group-hover:bg-brand-700 transition-colors duration-300 shadow-sm shrink-0">
+                <div class="w-8 h-8 md:w-10 md:h-10 bg-accent-500 text-brand-900 flex items-center justify-center rounded-sm group-hover:bg-accent-400 transition-colors duration-300 shadow-sm shrink-0">
                     <span class="font-serif text-base md:text-lg tracking-tighter italic">L</span>
                 </div>
                 <div class="flex flex-col items-center md:items-start text-center md:text-left mt-0.5 md:mt-0">
-                    <span class="text-[11px] md:text-sm font-semibold tracking-tight uppercase leading-none text-brand-900">Lawion and Partners</span>
-                    <span class="text-[7.5px] md:text-[10px] text-stone-500 uppercase tracking-widest leading-none mt-1 group-hover:text-brand-600 transition-colors block">Advocates &amp; Counsel</span>
+                    <span class="text-[11px] md:text-sm font-semibold tracking-tight uppercase leading-none text-white">Lawion and Partners</span>
+                    <span class="text-[7.5px] md:text-[10px] text-accent-500/80 uppercase tracking-widest leading-none mt-1 group-hover:text-accent-500 transition-colors block">Advocates &amp; Counsel</span>
                 </div>
             </a>
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-10">
-                <a href="index.html" class="nav-link text-xs font-medium hover:text-brand-800 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-px after:bg-brand-700 hover:after:w-full after:transition-all text-brand-800 after:w-full">Home</a>
-                <a href="practice.html" class="nav-link text-xs font-medium text-stone-500 hover:text-brand-800 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-px after:bg-brand-700 hover:after:w-full after:transition-all">Practice areas</a>
-                <a href="attorneys.html" class="nav-link text-xs font-medium text-stone-500 hover:text-brand-800 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-px after:bg-brand-700 hover:after:w-full after:transition-all">Insights</a>
-                <a href="cases.html" class="nav-link text-xs font-medium text-stone-500 hover:text-brand-800 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-px after:bg-brand-700 hover:after:w-full after:transition-all">Career and internships</a>
+                <a href="index.html" class="nav-link text-xs font-medium text-white transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:h-px after:bg-accent-500 hover:after:w-full after:transition-all hover:text-accent-500 after:w-full">Home</a>
+                <a href="practice.html" class="nav-link text-xs font-medium text-white/70 hover:text-accent-500 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-px after:bg-accent-500 hover:after:w-full after:transition-all">Practice areas</a>
+                <a href="attorneys.html" class="nav-link text-xs font-medium text-white/70 hover:text-accent-500 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-px after:bg-accent-500 hover:after:w-full after:transition-all">Insights</a>
+                <a href="cases.html" class="nav-link text-xs font-medium text-white/70 hover:text-accent-500 transition-colors relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-px after:bg-accent-500 hover:after:w-full after:transition-all">Career and internships</a>
             </div>
 
             <!-- CTA -->
             <div class="hidden md:flex">
-                <a href="contact.html" class="bg-brand-800 hover:bg-brand-700 text-white text-xs font-semibold   px-6 py-3 rounded-sm transition-all shadow-lg shadow-stone-900/10 hover:shadow-brand-700/20 flex items-center gap-2 group">
+                <a href="contact.html" class="bg-accent-500 hover:bg-accent-600 text-[#2B2B2B] text-xs font-semibold px-6 py-3 rounded-sm transition-all shadow-lg shadow-black/20 flex items-center gap-2 group">
                     <span>Contact us</span>
                     <iconify-icon icon="solar:arrow-right-linear" width="16" class="group-hover:translate-x-1 transition-transform"></iconify-icon>
                 </a>
             </div>
 
             <!-- Mobile Toggle -->
-            <button class="md:hidden absolute right-6 top-1/2 -translate-y-1/2 text-brand-900" onclick="toggleMobileMenu()">
+            <button class="md:hidden absolute right-6 top-1/2 -translate-y-1/2 text-white" onclick="toggleMobileMenu()">
                 <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
             </button>
         </div>
 
         <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="hidden md:hidden absolute top-24 left-0 w-full bg-white border-b border-stone-100 p-6 flex-col gap-6 shadow-xl animate-fade-in-down">
-            <a href="index.html" class="text-left text-sm font-medium text-brand-900">Home</a>
-            <a href="practice.html" class="text-left text-sm font-medium text-stone-500">Practice areas</a>
-            <a href="attorneys.html" class="text-left text-sm font-medium text-stone-500">Insights</a>
-            <a href="cases.html" class="text-left text-sm font-medium text-stone-500">Career and internships</a>
-            <a href="contact.html" class="text-left text-sm font-medium text-brand-800">Contact us</a>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-24 left-0 w-full bg-brand-950 border-b border-brand-800 p-6 flex-col gap-6 shadow-xl animate-fade-in-down">
+            <a href="index.html" class="text-left text-sm font-medium text-white">Home</a>
+            <a href="practice.html" class="text-left text-sm font-medium text-white/70 hover:text-accent-500">Practice areas</a>
+            <a href="attorneys.html" class="text-left text-sm font-medium text-white/70 hover:text-accent-500">Insights</a>
+            <a href="cases.html" class="text-left text-sm font-medium text-white/70 hover:text-accent-500">Career and internships</a>
+            <a href="contact.html" class="text-left text-sm font-medium text-accent-500">Contact us</a>
         </div>
     </nav>
 
@@ -131,7 +134,7 @@
         <section id="home" class="page-section fade-in">
             <!-- Enhanced Hero Section with Parallax -->
             <div class="relative w-full h-[85vh] flex items-center parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&amp;w=2070&amp;auto=format&amp;fit=crop');">
-                <div class="absolute inset-0 bg-brand-950/50 backdrop-blur-[2px]"></div>
+                <div class="absolute inset-0 bg-brand-900/70 backdrop-blur-[2px]"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-stone-950/90 via-stone-950/20 to-transparent"></div>
                 
                 <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
@@ -143,7 +146,7 @@
                         
                         <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-[0.95] mb-8 tracking-tight opacity-0 animate-[fadeIn_0.5s_ease-out_0.4s_forwards]">
                             Integrity in <br>
-                            <span class="italic font-light text-brand-200">Every Verdict.</span>
+                            <span class="italic font-light text-accent-500">Every Verdict.</span>
                         </h1>
                         
                         <p class="text-lg md:text-xl text-stone-200 font-light max-w-2xl leading-relaxed mb-10 opacity-0 animate-[fadeIn_0.5s_ease-out_0.6s_forwards]">
@@ -151,10 +154,10 @@
                         </p>
                         
                         <div class="flex flex-wrap gap-4 opacity-0 animate-[fadeIn_0.5s_ease-out_0.8s_forwards]">
-                            <a href="contact.html" class="bg-brand-800 text-white border border-brand-800 px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-widest hover:bg-brand-700 transition-colors shadow-lg shadow-brand-900/20">
+                            <a href="contact.html" class="bg-accent-500 text-textMain border border-accent-500 px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-widest hover:bg-accent-600 transition-colors shadow-lg shadow-black/20">
                                 Request Counsel
                             </a>
-                            <a href="practice.html" class="bg-transparent backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-widest hover:bg-white/10 transition-colors">
+                            <a href="practice.html" class="bg-transparent backdrop-blur-sm border border-accent-500/50 text-white px-8 py-4 rounded-sm text-xs font-semibold uppercase tracking-widest hover:bg-accent-500 hover:text-textMain transition-colors">
                                 Explore Expertise
                             </a>
                         </div>
@@ -182,21 +185,21 @@
             </div>
 
             <!-- Detailed Practice Areas Strip -->
-            <div class="bg-[#f4eff3] py-24 border-y border-stone-200">
+            <div class="bg-brand-50 py-24 border-y border-stone-200">
                 <div class="max-w-7xl mx-auto px-6">
                     <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                         <div>
-                            <span class="text-brand-800 text-xs font-bold uppercase tracking-widest">Areas of Focus</span>
+                            <span class="text-accent-500 text-xs font-bold uppercase tracking-widest">Areas of Focus</span>
                             <h2 class="text-3xl md:text-4xl font-serif text-brand-900 mt-3 tracking-tight">Comprehensive Legal Solutions</h2>
                         </div>
-                        <a href="practice.html" class="text-sm font-semibold uppercase tracking-widest border-b border-stone-900 pb-1 hover:text-brand-800 hover:border-brand-800 transition-colors">
+                        <a href="practice.html" class="text-sm font-semibold uppercase tracking-widest border-b border-stone-900 pb-1 hover:text-accent-500 hover:border-accent-500 transition-colors">
                             View All Services
                         </a>
                     </div>
 
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:judge-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Litigation & Dispute Resolution</h3>
@@ -204,8 +207,8 @@
                             Expert representation in civil courts, high courts, and complex litigation cases.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:shield-check-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">IP Protection & Portfolio Management</h3>
@@ -213,8 +216,8 @@
                             Comprehensive management and protection of intellectual property, trademarks, and patents.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:buildings-2-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Corporate & Commercial Law</h3>
@@ -222,8 +225,8 @@
                             Company registration, contract drafting, joint ventures, and corporate governance.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:wad-of-money-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Banking & Insurance</h3>
@@ -231,8 +234,8 @@
                             Regulatory compliance, dispute resolution, and advisories for financial institutions.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:home-smile-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Real Estate & Infrastructure Practice</h3>
@@ -240,8 +243,8 @@
                             Drafting lease agreements, title verification, and infrastructure project advisories.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:handshake-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Mergers & Acquisitions</h3>
@@ -249,8 +252,8 @@
                             Strategic counsel on due diligence, structuring, and execution of M&A transactions.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:gavel-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Litigation & Enforcement</h3>
@@ -258,8 +261,8 @@
                             Strategic enforcement of legal rights and representation in tribunal hearings.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:document-text-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Advisories & Opinions</h3>
@@ -267,8 +270,8 @@
                             Expert legal opinions, risk assessment, and regulatory compliance advisories.
                         </p>
                     </div>
-                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-brand-200 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
-                        <div class="w-12 h-12 rounded-sm bg-[#f3edf1] text-brand-900 group-hover:bg-brand-700 group-hover:text-white flex items-center justify-center mb-6 transition-colors">
+                    <div class="group p-8 rounded-sm border border-stone-100 hover:border-accent-500/50 bg-white hover:bg-stone-50 transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-sm bg-white border border-stone-100 text-brand-900 group-hover:bg-accent-500 group-hover:text-textMain flex items-center justify-center mb-6 transition-colors">
                             <iconify-icon icon="solar:calculator-linear" width="24"></iconify-icon>
                         </div>
                         <h3 class="text-xl font-serif text-brand-900 mb-3">Tax Law</h3>
@@ -285,7 +288,7 @@
                 <div class="max-w-7xl mx-auto px-6">
                     <div class="grid lg:grid-cols-12 gap-12 lg:gap-20">
                         <div class="lg:col-span-5">
-                            <h2 class="text-4xl md:text-5xl font-serif text-brand-900 mb-8 leading-tight tracking-tight">The intersection of <span class="italic text-brand-800">Law</span> and <span class="italic text-brand-800">Strategy</span>.</h2>
+                            <h2 class="text-4xl md:text-5xl font-serif text-brand-900 mb-8 leading-tight tracking-tight">The intersection of <span class="italic text-accent-500">Law</span> and <span class="italic text-accent-500">Strategy</span>.</h2>
                             <div class="w-20 h-1 bg-accent-500 mb-8"></div>
                             <p class="text-stone-500 font-light leading-relaxed mb-6">
                                 The legal landscape in Pakistan is evolving. Traditional approaches no longer suffice in a world driven by rapid regulatory changes and global economic integration.
@@ -294,21 +297,21 @@
                                 Lawion and Partners was founded on a simple premise: to provide world-class legal representation combined with deep local insight. Whether it's a high-stakes Supreme Court appeal or a complex cross-border transaction, our approach is meticulous, ethical, and relentlessly focused on the client's objective.
                             </p>
                             <div class="mt-10">
-                                <a href="attorneys.html" class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-brand-900 hover:text-brand-800 transition-colors pb-1 border-b border-stone-200 hover:border-brand-800">
+                                <a href="attorneys.html" class="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-brand-900 hover:text-accent-500 transition-colors pb-1 border-b border-stone-200 hover:border-accent-500">
                                     Meet the Partners <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                                 </a>
                             </div>
                         </div>
                         <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
                             <!-- Card 1 -->
-                            <div class="p-8 bg-[#f4eff3] rounded-sm border border-brand-100/50 hover:shadow-lg hover:shadow-brand-100/50 transition-all duration-300">
-                                <iconify-icon icon="solar:hand-shake-linear" class="text-brand-800 text-4xl mb-4"></iconify-icon>
+                            <div class="p-8 bg-brand-50 rounded-sm border border-stone-200/50 hover:shadow-lg hover:shadow-stone-200 transition-all duration-300">
+                                <iconify-icon icon="solar:hand-shake-linear" class="text-accent-500 text-4xl mb-4"></iconify-icon>
                                 <h3 class="text-lg font-serif text-brand-900 mb-2">Dispute Resolution</h3>
                                 <p class="text-sm text-stone-600 font-light leading-relaxed">Certified arbitrators and mediators providing cost-effective alternatives to litigation.</p>
                             </div>
                             <!-- Card 2 -->
-                            <div class="p-8 bg-[#f4eff3] rounded-sm border border-brand-100/50 hover:shadow-lg hover:shadow-brand-100/50 transition-all duration-300 sm:mt-8">
-                                <iconify-icon icon="solar:users-group-two-rounded-linear" class="text-brand-800 text-4xl mb-4"></iconify-icon>
+                            <div class="p-8 bg-brand-50 rounded-sm border border-stone-200/50 hover:shadow-lg hover:shadow-stone-200 transition-all duration-300 sm:mt-8">
+                                <iconify-icon icon="solar:users-group-two-rounded-linear" class="text-accent-500 text-4xl mb-4"></iconify-icon>
                                 <h3 class="text-lg font-serif text-brand-900 mb-2">Family &amp; Inheritance</h3>
                                 <p class="text-sm text-stone-600 font-light leading-relaxed">Sensitive handling of personal matters ensuring privacy and fair distribution under Islamic Law.</p>
                             </div>
@@ -322,7 +325,7 @@
                 <div class="max-w-7xl mx-auto px-6">
                     <div class="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <span class="text-brand-800 text-xs font-bold uppercase tracking-widest">Our Methodology</span>
+                            <span class="text-accent-500 text-xs font-bold uppercase tracking-widest">Our Methodology</span>
                             <h2 class="text-3xl md:text-5xl font-serif text-brand-900 mt-3 mb-8 tracking-tight">From Consultation to <br>Resolution.</h2>
                             <p class="text-stone-500 font-light mb-10 leading-relaxed">
                                 We believe in transparency and strategy. Every case begins with a thorough analysis of the facts and applicable law, ensuring no surprises in the courtroom.
@@ -331,28 +334,28 @@
                             <div class="space-y-8 relative before:absolute before:left-3.5 before:top-2 before:bottom-2 before:w-px before:bg-stone-200">
                                 <!-- Step 1 -->
                                 <div class="relative pl-12">
-                                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-[#f3edf1] border border-stone-200 text-brand-800 flex items-center justify-center text-xs font-bold font-serif z-10">1</div>
+                                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-white border border-stone-100 border border-stone-200 text-accent-500 flex items-center justify-center text-xs font-bold font-serif z-10">1</div>
                                     <h4 class="text-lg font-medium text-brand-900 mb-2">Case Assessment</h4>
                                     <p class="text-sm text-stone-500">Initial review of documents and legal standing to determine viability.</p>
                                 </div>
                                 <!-- Step 2 -->
                                 <div class="relative pl-12">
-                                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-[#f3edf1] border border-stone-200 text-brand-800 flex items-center justify-center text-xs font-bold font-serif z-10">2</div>
+                                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-white border border-stone-100 border border-stone-200 text-accent-500 flex items-center justify-center text-xs font-bold font-serif z-10">2</div>
                                     <h4 class="text-lg font-medium text-brand-900 mb-2">Strategic Planning</h4>
                                     <p class="text-sm text-stone-500">Formulating a bespoke legal strategy tailored to specific outcomes.</p>
                                 </div>
                                 <!-- Step 3 -->
                                 <div class="relative pl-12">
-                                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-[#f3edf1] border border-stone-200 text-brand-800 flex items-center justify-center text-xs font-bold font-serif z-10">3</div>
+                                    <div class="absolute left-0 top-0 w-8 h-8 rounded-full bg-white border border-stone-100 border border-stone-200 text-accent-500 flex items-center justify-center text-xs font-bold font-serif z-10">3</div>
                                     <h4 class="text-lg font-medium text-brand-900 mb-2">Representation</h4>
                                     <p class="text-sm text-stone-500">Aggressive advocacy in court or skilled negotiation in boardrooms.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="relative h-full min-h-[500px] bg-[#f3edf1] rounded-sm overflow-hidden">
+                        <div class="relative h-full min-h-[500px] bg-white border border-stone-100 rounded-sm overflow-hidden">
                              <!-- Decorative abstract image -->
                              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&amp;w=2069&amp;auto=format&amp;fit=crop" class="absolute inset-0 w-full h-full object-cover grayscale opacity-80" alt="Office">
-                             <div class="absolute bottom-8 right-8 bg-white p-6 shadow-xl max-w-xs border-l-4 border-brand-600">
+                             <div class="absolute bottom-8 right-8 bg-white p-6 shadow-xl max-w-xs border-l-4 border-accent-500">
                                  <div class="text-4xl font-serif text-brand-900 mb-1">98%</div>
                                  <div class="text-xs text-stone-500 uppercase tracking-widest">Client Retention Rate</div>
                              </div>
@@ -363,13 +366,13 @@
 
             <!-- Pre-Footer CTA -->
             <div class="bg-brand-950 py-24 relative overflow-hidden">
-                <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23b05f93\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+                <div class="absolute inset-0 opacity-20" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23C9A14A\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
                 <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <h2 class="text-4xl md:text-5xl font-serif text-white mb-6 tracking-tight">Ready to secure your legal standing?</h2>
                     <p class="text-stone-400 font-light mb-10 max-w-xl mx-auto">
                         Schedule a confidential consultation with our senior counsel. We review cases within 24 hours.
                     </p>
-                    <a href="contact.html" class="bg-white text-brand-900 px-10 py-4 rounded-sm text-sm font-semibold uppercase tracking-widest hover:bg-[#f4eff3] transition-colors">
+                    <a href="contact.html" class="bg-accent-500 text-textMain px-10 py-4 rounded-sm text-sm font-semibold uppercase tracking-widest hover:bg-accent-600 transition-colors">
                         Book Appointment
                     </a>
                 </div>
@@ -392,58 +395,58 @@
 
     <!-- ================= FOOTER ================= -->
     
-    <footer class="bg-[#ebdcd3] border-t border-stone-200 pt-20 pb-10">
+    <footer class="bg-brand-900 border-t border-brand-800 pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid md:grid-cols-4 gap-12 mb-20">
                 <div class="col-span-1 md:col-span-1">
                     <a href="index.html" class="flex items-center gap-2 mb-8 text-left">
-                        <div class="w-8 h-8 bg-brand-900 text-white flex items-center justify-center rounded-sm text-sm font-serif italic">L</div>
-                        <span class="font-bold text-brand-900 tracking-tight uppercase">Lawion and Partners</span>
+                        <div class="w-8 h-8 bg-accent-500 text-[#2B2B2B] flex items-center justify-center rounded-sm text-sm font-serif italic">L</div>
+                        <span class="font-bold text-white tracking-tight uppercase">Lawion and Partners</span>
                     </a>
-                    <p class="text-xs text-stone-500 leading-relaxed mb-8 pr-4">
+                    <p class="text-xs text-white/60 leading-relaxed mb-8 pr-4">
                         A premier law firm committed to providing exceptional legal representation across Pakistan. Justice, Integrity, Excellence.
                     </p>
                     <div class="flex gap-4">
-                        <a href="#" class="w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-stone-400 hover:text-brand-900 hover:border-stone-900 transition-all"><iconify-icon icon="solar:brand-linkedin-linear" width="16"></iconify-icon></a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-stone-400 hover:text-brand-900 hover:border-stone-900 transition-all"><iconify-icon icon="solar:brand-twitter-linear" width="16"></iconify-icon></a>
-                        <a href="#" class="w-8 h-8 rounded-full bg-white border border-stone-200 flex items-center justify-center text-stone-400 hover:text-brand-900 hover:border-stone-900 transition-all"><iconify-icon icon="solar:brand-facebook-linear" width="16"></iconify-icon></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-transparent border border-accent-500/30 flex items-center justify-center text-white/40 hover:bg-accent-500 hover:text-[#2B2B2B] hover:border-accent-500 transition-all"><iconify-icon icon="solar:brand-linkedin-linear" width="16"></iconify-icon></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-transparent border border-accent-500/30 flex items-center justify-center text-white/40 hover:bg-accent-500 hover:text-[#2B2B2B] hover:border-accent-500 transition-all"><iconify-icon icon="solar:brand-twitter-linear" width="16"></iconify-icon></a>
+                        <a href="#" class="w-8 h-8 rounded-full bg-transparent border border-accent-500/30 flex items-center justify-center text-white/40 hover:bg-accent-500 hover:text-[#2B2B2B] hover:border-accent-500 transition-all"><iconify-icon icon="solar:brand-facebook-linear" width="16"></iconify-icon></a>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-bold text-brand-900 uppercase tracking-widest mb-6">Practice Areas</h4>
-                    <ul class="space-y-4 text-xs text-stone-500 font-medium">
-                        <li><a href="practice.html" class="hover:text-brand-800 transition-colors">Litigation &amp; Dispute Resolution</a></li>
-                        <li><a href="practice.html" class="hover:text-brand-800 transition-colors">IP Protection &amp; Portfolio Management</a></li>
-                        <li><a href="practice.html" class="hover:text-brand-800 transition-colors">Corporate &amp; Commercial Law</a></li>
-                        <li><a href="practice.html" class="hover:text-brand-800 transition-colors">Banking &amp; Insurance</a></li>
-                        <li><a href="practice.html" class="hover:text-brand-800 transition-colors">Real Estate &amp; Infrastructure</a></li>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Practice Areas</h4>
+                    <ul class="space-y-4 text-xs text-white/60 font-medium">
+                        <li><a href="practice.html" class="hover:text-accent-500 transition-colors">Litigation &amp; Dispute Resolution</a></li>
+                        <li><a href="practice.html" class="hover:text-accent-500 transition-colors">IP Protection &amp; Portfolio Management</a></li>
+                        <li><a href="practice.html" class="hover:text-accent-500 transition-colors">Corporate &amp; Commercial Law</a></li>
+                        <li><a href="practice.html" class="hover:text-accent-500 transition-colors">Banking &amp; Insurance</a></li>
+                        <li><a href="practice.html" class="hover:text-accent-500 transition-colors">Real Estate &amp; Infrastructure</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-bold text-brand-900 uppercase tracking-widest mb-6">Firm</h4>
-                    <ul class="space-y-4 text-xs text-stone-500 font-medium">
-                        <li><a href="index.html" class="hover:text-brand-800 transition-colors">Home</a></li>
-                        <li><a href="attorneys.html" class="hover:text-brand-800 transition-colors">Insights</a></li>
-                        <li><a href="cases.html" class="hover:text-brand-800 transition-colors">Career and internships</a></li>
-                        <li><a href="contact.html" class="hover:text-brand-800 transition-colors">Contact us</a></li>
+                    <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Firm</h4>
+                    <ul class="space-y-4 text-xs text-white/60 font-medium">
+                        <li><a href="index.html" class="hover:text-accent-500 transition-colors">Home</a></li>
+                        <li><a href="attorneys.html" class="hover:text-accent-500 transition-colors">Insights</a></li>
+                        <li><a href="cases.html" class="hover:text-accent-500 transition-colors">Career and internships</a></li>
+                        <li><a href="contact.html" class="hover:text-accent-500 transition-colors">Contact us</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-xs font-bold text-brand-900 uppercase tracking-widest mb-6">Locations</h4>
-                    <ul class="space-y-4 text-xs text-stone-500 font-medium">
+                    <h4 class="text-xs font-bold text-white uppercase tracking-widest mb-6">Locations</h4>
+                    <ul class="space-y-4 text-xs text-white/60 font-medium">
                         <li class="flex items-start gap-2">
-                            <iconify-icon icon="solar:map-point-linear" class="shrink-0 mt-0.5 text-brand-600"></iconify-icon> 
+                            <iconify-icon icon="solar:map-point-linear" class="shrink-0 mt-0.5 text-accent-500"></iconify-icon> 
                             <span>Blue Area, Islamabad</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <iconify-icon icon="solar:map-point-linear" class="shrink-0 mt-0.5 text-brand-600"></iconify-icon> 
+                            <iconify-icon icon="solar:map-point-linear" class="shrink-0 mt-0.5 text-accent-500"></iconify-icon> 
                             <span>Gulberg III, Lahore</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <iconify-icon icon="solar:map-point-linear" class="shrink-0 mt-0.5 text-brand-600"></iconify-icon> 
+                            <iconify-icon icon="solar:map-point-linear" class="shrink-0 mt-0.5 text-accent-500"></iconify-icon> 
                             <span>Clifton, Karachi</span>
                         </li>
                     </ul>
@@ -451,10 +454,10 @@
             </div>
 
             <div class="border-t border-stone-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-[10px] text-stone-400 uppercase tracking-wider">© 2026 Lawion and Partners. All rights reserved.</p>
-                <div class="flex gap-6 text-[10px] text-stone-400 uppercase tracking-wider">
-                    <a href="#" class="hover:text-brand-900">Privacy Policy</a>
-                    <a href="#" class="hover:text-brand-900">Terms of Service</a>
+                <p class="text-[10px] text-white/40 uppercase tracking-wider">© 2026 Lawion and Partners. All rights reserved.</p>
+                <div class="flex gap-6 text-[10px] text-white/40 uppercase tracking-wider">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -478,24 +481,24 @@
             width: 6px;
         }
         .custom-scrollbar::-webkit-scrollbar-track {
-            background: #f3eaf1;
+            background: #F8F5F0;
             border-radius: 4px;
         }
         .custom-scrollbar::-webkit-scrollbar-thumb {
-            background-color: #5f254f;
+            background-color: #C9A14A;
             border-radius: 4px;
         }
     </style>
 
         <!-- Disclaimer Modal -->
-    <div id="disclaimer-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-brand-950/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+    <div id="disclaimer-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-brand-900/90 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
         <div class="bg-white p-8 md:p-12 max-w-2xl mx-4 rounded-sm shadow-2xl transform scale-95 transition-transform duration-300" id="disclaimer-content">
             <div class="mb-8 text-center">
-                <iconify-icon icon="solar:shield-warning-linear" class="text-brand-800 text-5xl mb-4"></iconify-icon>
+                <iconify-icon icon="solar:shield-warning-linear" class="text-accent-500 text-5xl mb-4"></iconify-icon>
                 <h2 class="text-2xl font-serif text-brand-900 mb-4">Disclaimer & User Acknowledgement</h2>
                 <div class="w-12 h-px bg-accent-500 mx-auto"></div>
             </div>
-            <div class="text-sm text-stone-600 space-y-4 mb-8 font-light h-52 overflow-y-scroll pr-4 p-4 border border-stone-100 bg-[#fbf9fa] rounded-sm custom-scrollbar">
+            <div class="text-sm text-stone-600 space-y-4 mb-8 font-light h-52 overflow-y-scroll pr-4 p-4 border border-stone-100 bg-brand-50 rounded-sm custom-scrollbar">
                 <p>
                     Pursuant to the rules of the Bar Council of India, we are prohibited from advertising or soliciting legal work. By clicking "I Agree", the user confirms that:
                 </p>
@@ -511,7 +514,7 @@
                 <button id="btn-decline" class="px-8 py-3 bg-stone-200 text-stone-700 text-xs font-semibold uppercase tracking-widest hover:bg-stone-300 transition-colors rounded-sm">
                     I Decline
                 </button>
-                <button id="btn-accept" class="px-8 py-3 bg-brand-800 text-white text-xs font-semibold uppercase tracking-widest hover:bg-brand-700 transition-colors rounded-sm shadow-lg shadow-brand-900/20">
+                <button id="btn-accept" class="px-8 py-3 bg-accent-500 text-textMain text-xs font-semibold uppercase tracking-widest hover:bg-accent-600 transition-colors rounded-sm shadow-lg shadow-black/20">
                     I Agree
                 </button>
             </div>
