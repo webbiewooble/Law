@@ -138,97 +138,49 @@
 
         <!-- PAGE 5: CONTACT -->
         <section id="contact" class="page-section fade-in">
-            <div class="grid md:grid-cols-2 min-h-screen">
-                <div class="bg-brand-900 text-white p-12 md:p-24 flex flex-col justify-center relative overflow-hidden">
-                    <div class="absolute top-0 left-0 p-12 opacity-10">
-                        <iconify-icon icon="solar:plain-linear" width="200"></iconify-icon>
-                    </div>
-                    
-                    <h2 class="text-4xl md:text-5xl font-serif mb-8 tracking-tight relative z-10">Let's discuss your case.</h2>
-                    <p class="text-stone-400 mb-16 font-light max-w-md relative z-10 leading-relaxed">
-                        Our team is available for consultations in New Delhi, Mumbai, and Bangalore. All communications are strictly confidential.
-                    </p>
-                    
-                    <div class="space-y-10 relative z-10">
-                        <!-- Contact Phone -->
-                        <div class="flex gap-6 items-start">
-                            <div class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center text-accent-500 shrink-0 border border-brand-700">
-                                <iconify-icon icon="solar:phone-calling-linear" width="20"></iconify-icon>
-                            </div>
-                            <div>
-                                <div class="text-xs text-accent-500 uppercase tracking-widest mb-2 font-bold">Call or WhatsApp</div>
-                                <a href="tel:+919990404665" class="text-lg text-white hover:text-accent-500 transition-colors font-serif">+91 99904 04665</a>
-                            </div>
-                        </div>
-
-                        <!-- Contact Email -->
-                        <div class="flex gap-6 items-start">
-                            <div class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center text-accent-500 shrink-0 border border-brand-700">
-                                <iconify-icon icon="solar:letter-linear" width="20"></iconify-icon>
-                            </div>
-                            <div>
-                                <div class="text-xs text-accent-500 uppercase tracking-widest mb-2 font-bold">Email Us</div>
-                                <a href="mailto:lawionandpartners@gmail.com" class="text-lg text-white hover:text-accent-500 transition-colors font-serif">lawionandpartners@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <!-- Contact Website -->
-                        <div class="flex gap-6 items-start">
-                            <div class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center text-accent-500 shrink-0 border border-brand-700">
-                                <iconify-icon icon="solar:global-linear" width="20"></iconify-icon>
-                            </div>
-                            <div>
-                                <div class="text-xs text-accent-500 uppercase tracking-widest mb-2 font-bold">Website</div>
-                                <a href="https://www.lawionandpartners.com" target="_blank" rel="noopener noreferrer" class="text-lg text-white hover:text-accent-500 transition-colors font-serif">www.lawionandpartners.com</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="min-h-[70vh] bg-brand-900 text-white p-12 md:p-24 flex flex-col items-center justify-center relative overflow-hidden text-center">
+                <div class="absolute top-0 left-0 p-12 opacity-10">
+                    <iconify-icon icon="solar:plain-linear" width="200"></iconify-icon>
                 </div>
                 
-                <div class="bg-white p-12 md:p-24 flex flex-col justify-center">
-                    <!-- Note for GitHub Pages: Replace action with your Formspree endpoint -->
-                    <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST" class="space-y-8">
-                        <div class="grid md:grid-cols-2 gap-8">
-                            <div class="flex flex-col gap-3">
-                                <label for="first_name" class="text-xs font-bold uppercase text-stone-500 tracking-widest">First Name</label>
-                                <input id="first_name" name="first_name" type="text" required="" class="custom-input w-full bg-transparent border-b border-stone-200 p-3 text-sm text-brand-900 transition-all placeholder:text-stone-300" placeholder="Ali">
-                            </div>
-                            <div class="flex flex-col gap-3">
-                                <label for="last_name" class="text-xs font-bold uppercase text-stone-500 tracking-widest">Last Name</label>
-                                <input id="last_name" name="last_name" type="text" required="" class="custom-input w-full bg-transparent border-b border-stone-200 p-3 text-sm text-brand-900 transition-all placeholder:text-stone-300" placeholder="Khan">
-                            </div>
+                <h2 class="text-4xl md:text-5xl font-serif mb-8 tracking-tight relative z-10">Let's discuss your case.</h2>
+                <p class="text-stone-400 mb-16 font-light max-w-md relative z-10 leading-relaxed mx-auto">
+                    Our team is available for consultations in New Delhi, Mumbai, and Bangalore. All communications are strictly confidential.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-10 md:gap-16 relative z-10 max-w-5xl mx-auto w-full">
+                    <!-- Contact Phone -->
+                    <div class="flex flex-col items-center text-center gap-4 bg-brand-800/50 p-8 rounded-sm border border-brand-800">
+                        <div class="w-16 h-16 rounded-full bg-brand-800 flex items-center justify-center text-accent-500 shrink-0 border border-brand-700 mb-2">
+                            <iconify-icon icon="solar:phone-calling-linear" width="32"></iconify-icon>
                         </div>
+                        <div>
+                            <div class="text-xs text-accent-500 uppercase tracking-widest mb-2 font-bold">Call or WhatsApp</div>
+                            <a href="tel:+919990404665" class="text-lg text-white hover:text-accent-500 transition-colors font-serif">+91 99904 04665</a>
+                        </div>
+                    </div>
 
-                        <div class="flex flex-col gap-3">
-                            <label for="email" class="text-xs font-bold uppercase text-stone-500 tracking-widest">Email Address</label>
-                            <input id="email" name="email" type="email" required="" class="custom-input w-full bg-transparent border-b border-stone-200 p-3 text-sm text-brand-900 transition-all placeholder:text-stone-300" placeholder="ali@example.com">
+                    <!-- Contact Email -->
+                    <div class="flex flex-col items-center text-center gap-4 bg-brand-800/50 p-8 rounded-sm border border-brand-800">
+                        <div class="w-16 h-16 rounded-full bg-brand-800 flex items-center justify-center text-accent-500 shrink-0 border border-brand-700 mb-2">
+                            <iconify-icon icon="solar:letter-linear" width="32"></iconify-icon>
                         </div>
+                        <div>
+                            <div class="text-xs text-accent-500 uppercase tracking-widest mb-2 font-bold">Email Us</div>
+                            <a href="mailto:lawionandpartners@gmail.com" class="text-lg text-white hover:text-accent-500 transition-colors font-serif" style="word-break: break-all;">lawionandpartners@gmail.com</a>
+                        </div>
+                    </div>
 
-                        <div class="flex flex-col gap-3">
-                            <label for="case_type" class="text-xs font-bold uppercase text-stone-500 tracking-widest">Case Type</label>
-                            <div class="relative">
-                                <select id="case_type" name="case_type" class="custom-input w-full bg-transparent border-b border-stone-200 p-3 text-sm text-brand-900 appearance-none cursor-pointer rounded-none">
-                                    <option>Corporate Law</option>
-                                    <option>Civil Litigation</option>
-                                    <option>Criminal Defense</option>
-                                    <option>Family Law</option>
-                                    <option>Property/Real Estate</option>
-                                </select>
-                                <iconify-icon icon="solar:alt-arrow-down-linear" class="absolute right-3 top-3.5 text-stone-400 pointer-events-none"></iconify-icon>
-                            </div>
+                    <!-- Contact Website -->
+                    <div class="flex flex-col items-center text-center gap-4 bg-brand-800/50 p-8 rounded-sm border border-brand-800">
+                        <div class="w-16 h-16 rounded-full bg-brand-800 flex items-center justify-center text-accent-500 shrink-0 border border-brand-700 mb-2">
+                            <iconify-icon icon="solar:global-linear" width="32"></iconify-icon>
                         </div>
-
-                        <div class="flex flex-col gap-3">
-                            <label for="message" class="text-xs font-bold uppercase text-stone-500 tracking-widest">Message</label>
-                            <textarea id="message" name="message" rows="4" required="" class="custom-input w-full bg-transparent border-b border-stone-200 p-3 text-sm text-brand-900 transition-all placeholder:text-stone-300 resize-none" placeholder="Briefly describe your legal matter..."></textarea>
+                        <div>
+                            <div class="text-xs text-accent-500 uppercase tracking-widest mb-2 font-bold">Website</div>
+                            <a href="https://www.lawionandpartners.com" target="_blank" rel="noopener noreferrer" class="text-lg text-white hover:text-accent-500 transition-colors font-serif">www.lawionandpartners.com</a>
                         </div>
-
-                        <div class="pt-4">
-                            <button type="submit" class="w-full bg-brand-800 hover:bg-brand-900 text-white font-semibold uppercase tracking-widest py-4 rounded-sm text-xs transition-colors shadow-xl shadow-brand-700/20">
-                                Submit Inquiry
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
