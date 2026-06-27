@@ -19,6 +19,8 @@ export default defineConfig(() => {
           attorneys: path.resolve(__dirname, 'attorneys.html'),
           cases: path.resolve(__dirname, 'cases.html'),
           contact: path.resolve(__dirname, 'contact.html'),
+          privacy: path.resolve(__dirname, 'privacy.html'),
+          terms: path.resolve(__dirname, 'terms.html'),
         }
       }
     },
